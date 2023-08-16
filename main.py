@@ -10,10 +10,4 @@ maxRate = rate + damage / 2
 maxDamage = rate * 2 + damage
 print(f"Max Crit Rate: {maxRate}\nMax Crit Damage: {maxDamage}")
 
-for i in range(10):
-    if randint(0,100) <= rate:
-        totalDamage += 1000 + 1000 * damage * 0.01
-    else: 
-        totalDamage += 1000
-
-print(totalDamage / 100)
+print(f"1000 ATK Default Crit DMG: {1000 + defaultAtk * rate * 0.01 * damage * 0.01}")
